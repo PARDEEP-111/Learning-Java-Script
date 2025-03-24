@@ -6,7 +6,7 @@
 
 // document.querySelector(".box").style.backgroundColor="red"
 
-document.querySelectorAll(".box").forEach(e=>{
+// document.querySelectorAll(".box").forEach(e=>{
 
-    e.style.backgroundColor="red"
-})
+//     e.style.backgroundColor="red"
+// })
