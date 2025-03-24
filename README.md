@@ -7,7 +7,5 @@ This repository trave my Java script. This will start from dom.
 </p>
 <br>
 <p>
- <h5> Note: This reposatory is made when i am learning Java Script so this can have some flawes so dont mind them. </h5>
+ <h5> Note: This reposatory is made when i am learning Java Script so this can have some flawes so dont mind them.I was facing an error so my commits are not seriously given so also dont mind them eighter. </h5>
 </p>
-hifdsfdsf
-dsfds  ffsf sffsfsdfasdf asfas  fd
