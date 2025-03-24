@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing and inserting element in js</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div id="first" class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <style>
+*{
+    font-family: sans-serif;
+}
+.container{
+    border: 2px solid black;
+}
+    </style>
+
+    <script>
+let a = document.getElementById("first")
+a.innerHTML= " i have been doing something <b>by java script</b>"
+let div= document.createElement("div").innerHTML="i was created by js"
+document.querySelector(".box").replaceWith(div)
+
+let cont = document.querySelector(".container")
+cont.insertAdjacentHTML("afterEnd","<b>i dont who who added me </b>")
+document.querySelector(".container").classList.add("harry")
+
+
+    </script>
+</body>
+
+</html>
