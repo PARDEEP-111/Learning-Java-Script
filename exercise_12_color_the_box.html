@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersice color the boxes</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .container{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+            height: 600px;
+            width: 100vw;
+        border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        .box{
+            padding: 10px;
+            margin: 10px;
+            height: 60px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 10px ;
+        }
+    </style>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+    <script>
+     
+function GetRandomColor(){
+    let val1, val2, val3;
+    val1= Math.ceil(0 + Math.random()* 250);
+    val2=Math.ceil(0 + Math.random()* 250);
+    val3=Math.ceil(0 + Math.random()* 250);
+return `rgb(${val1},${val2},${val3})`
+}
+let box = document.getElementsByClassName("box")
+Array.from(box).forEach(e =>{
+   e.style.backgroundColor=GetRandomColor();
+   e.style.color=GetRandomColor();
+})
+    </script>
+</body>
+</html>
