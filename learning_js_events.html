@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>learing events in js</title>
 </head>
+
 <body>
     <style>
-        *{
+        * {
             font-family: sans-serif;
         }
-        .container{
+
+        .container {
             gap: 10px;
             height: 800px;
             width: 100vw;
@@ -21,7 +24,8 @@
             align-items: center;
 
         }
-        .box{
+
+        .box {
             margin: 10px;
             padding: 10px;
             height: 80px;
@@ -35,14 +39,45 @@
         <div class="box">i am a button</div>
     </div>
     <script>
-        let button = document.getElementById("btn")
-        button.addEventListener("click", e=>{
-         document.querySelector(".box").innerHTML="hey"
-        })
-        button.addEventListener("dblclick",e=>{
-            alert("i waz cliked")
-            
-        })
+        // let button = document.getElementById("btn")
+        // // button.addEventListener("click", e=>{
+        // //     e.stopPropagation()
+        // //  document.querySelector(".box").innerHTML="hey"
+        // // })
+        // button.addEventListener("dblclick", e => {
+        //     alert("i waz cliked")
+        //     e.stopPropagation()
+        //     console.log(e)
+        // })
+
+        // button.addEventListener("contextmenu", e => {
+        //     e.stopPropagation()
+        //     alert("i waz right cliked")
+
+        // })
+        // let con = document.querySelector(".container")
+        // con.addEventListener("dblclick", e => {
+        //     e.stopPropagation()
+        //     alert("i waz  container cliked")
+        // })
+
+        function GetRandomColor() {
+                let val1, val2, val3;
+                val1 = Math.ceil(0 + Math.random() * 250);
+                val2 = Math.ceil(0 + Math.random() * 250);
+                val3 = Math.ceil(0 + Math.random() * 250);
+                return `rgb(${val1},${val2},${val3})`
+            }
+
+        // setInterval(() => {
+        //     document.getElementById("btn").style.backgroundColor = GetRandomColor()
+          
+        // }, 300);
+        setTimeout(() => {
+            document.getElementById("btn").style.backgroundColor = GetRandomColor()
+          
+        }, 3000);
     </script>
 </body>
+
 </html>
