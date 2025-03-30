@@ -11,25 +11,75 @@
     </style>
 
     <script>
-        console.log("Harry is harry")
-        setTimeout(() => {
-            console.log("i dont know ")
-        }, 2000);
-        console.log("The end")
-const callback = (arg) => {
- console.log(arg) 
-}
+//         console.log("Harry is harry")
+//         setTimeout(() => {
+//             console.log("i dont know ")
+//         }, 2000);
+//         console.log("The end")
+// const callback = (arg) => {
+//  console.log(arg) 
+// }
 
-      const loodscript = (src,callback)=>{
-     let sc= document.createElement("script")
-     sc.src =src;
-     sc.onload =  console.log("asl;dkfdjsaifjsdfksdjflksdfjdslfkj")
-     document.head.append(sc)
+//       const loodscript = (src,callback)=>{
+//      let sc= document.createElement("script")
+//      sc.src =src;
+//      sc.onload =  console.log("asl;dkfdjsaifjsdfksdjflksdfjdslfkj")
+//      document.head.append(sc)
      
-      }
-        loodscript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",callback)
+//       }
+//         loodscript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",callback)
 
+let prom1 = new Promise((resolve,reject) => {
+  let a = Math.random();
+  if(a<0.5){
+    reject("The number is not supporting you !!!")
+
+  }
+  else{
+    setTimeout(() => {
+        console.log("I was done!");
+        resolve("harry")
         
+    }, 1000);
+  }
+}
+)
+
+
+prom1.then((a) => {
+  console.log(a)
+}
+).catch((err) => {
+    console.log(err);
+    
+  }
+  )
+  let prom2 = new Promise((resolve,reject) => {
+  let a = Math.random();
+  if(a<0.5){
+    reject("The number is not supporting you 2 !!!")
+
+  }
+  else{
+    setTimeout(() => {
+        console.log("I was done for nothing!");
+        resolve("garry")
+        
+    }, 1000);
+  }
+}
+)
+
+
+ let p3 = Promise.allSettled([prom1,prom2])
+ p3.then((a) => {
+   console.log(a);
+   
+ }).catch((err) => {
+   console.log(err);
+   
+ }
+ )
     </script>
 </body>
 </html>
