@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cath error handling</title>
+</head>
+<style>
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+
+<body>
+    dslkfjsdlkfjsdflk
+    <script>
+        let a = prompt("Enter first number")
+        let b = prompt("Enter second number")
+
+        if (isNaN(a)||isNaN(b)) {
+            throw SyntaxError("The value is not correct")
+        }
+     function main() {
+
+         let sum = parseInt(a) + parseInt(b);
+         try {
+             console.log("The answer is " ,sum );
+             return true;
+             
+            } catch (Error) {
+                console.log("Error");
+                return false;
+            }
+            finally{
+                console.log(" All the file's are closing");
+                
+            }
+        }
+ let c =main()
+    </script>
+</body>
+
+</html>
