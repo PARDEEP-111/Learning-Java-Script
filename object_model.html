@@ -10,12 +10,53 @@
 </head>
 <body>
     <script>
-        let obj = {
-            a:"harry",
-            rol_no:10,
+    //     let obj = {
+    //         a:"harry",
+    //         rol_no:10,
+    //     }
+    //    let animals={
+    //     eats:true
+
+    //    }
+    //    let rabit={
+    //     jumps :true
+    //    }
+    //     rabit.__proto__=animals;
+    class animals{
+        constructor(name){
+            this.name=name
+            console.log("object is created");
+            
         }
-        console.log(obj);
+        eats(){
+            console.log("Kha rha hu")
+        }
+        jumps(){
+            console.log("Khood rha hu")
+        }
+        runs(){
+            console.log("dhod rha hu");
+            
+        }
+    }
+    class lion extends animals{
+
+        constructor(name){
+        super(name)
+           console.log("i am th king of the");
+           
+        }
+        roars(){
+        console.log("roaaaar roaaarrr !!!!!!1");
         
+        }
+    }
+    let a =new animals("bunny")
+    console.log(a);
+    let b = new lion("Sher-gill")
+        console.log(b);
+    
+    
     </script>
 </body>
 </html>
