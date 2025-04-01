@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +9,57 @@
 
     </style>
 </head>
+
 <body>
     <script>
-    //     let obj = {
-    //         a:"harry",
-    //         rol_no:10,
-    //     }
-    //    let animals={
-    //     eats:true
+        //     let obj = {
+        //         a:"harry",
+        //         rol_no:10,
+        //     }
+        //    let animals={
+        //     eats:true
 
-    //    }
-    //    let rabit={
-    //     jumps :true
-    //    }
-    //     rabit.__proto__=animals;
-    class animals{
-        constructor(name){
-            this.name=name
-            console.log("object is created");
-            
-        }
-        eats(){
-            console.log("Kha rha hu")
-        }
-        jumps(){
-            console.log("Khood rha hu")
-        }
-        runs(){
-            console.log("dhod rha hu");
-            
-        }
-    }
-    class lion extends animals{
+        //    }
+        //    let rabit={
+        //     jumps :true
+        //    }
+        //     rabit.__proto__=animals;
+        class animals {
+            constructor(name) {
+                this.name = name
+                console.log("object is created");
 
-        constructor(name){
-        super(name)
-           console.log("i am th king of the");
-           
+            }
+            eats() {
+                console.log("Kha rha hu")
+            }
+            jumps() {
+                console.log("Khood rha hu")
+            }
+            runs() {
+                console.log("dhod rha hu");
+
+            }
         }
-        roars(){
-        console.log("roaaaar roaaarrr !!!!!!1");
-        
+        class lion extends animals {
+
+            constructor(name) {
+                super(name);
+                console.log("i am th king of the");
+
+            }
+            eats() {
+                super.eats()
+                console.log("Kha rha hu roar !!")
+            }
         }
-    }
-    let a =new animals("bunny")
-    console.log(a);
-    let b = new lion("Sher-gill")
+        let a = new animals("bunny")
+        console.log(a);
+        let b = new lion("Sher-gill")
         console.log(b);
-    
-    
+
+
     </script>
 </body>
+
 </html>
