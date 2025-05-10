@@ -1,0 +1,22 @@
+{
+  "name": "sp",
+  "version": "1.0.0",
+  "description": "this is a clone",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PARDEEP-111/Learning-Java-Script.git"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "Pardeep singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PARDEEP-111/Learning-Java-Script/issues"
+  },
+  "homepage": "https://github.com/PARDEEP-111/Learning-Java-Script#readme"
+}
